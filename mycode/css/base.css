@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+/* 倒三角 */
+
+.triangle-down{
+    border: 5px solid #666;
+    border-style: solid dashed dashed;
+    border-color: #666 transparent transparent;
+    
+}
+
+/* IE8以上都是可以的 */
+.clearfix:before,.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+/**
+*单三角，需要两个三角。用before,after
+*/
+
+
+.triangle-up-s{
+    position: relative
+}
+.triangle-up-s:before, .triangle-up-s:after {
+    content: " ";
+
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    top: -12px;
+    border: 6px solid #f1f1f1;  /*这里是6px 上面的top就得12px*/
+    border-style: dashed dashed solid;  /*兼容IE浏览器*/ 
+    border-color: transparent transparent #f1f1f1;
+    
+}
+
+.triangle-up-s:after {
+    border-color: transparent transparent #fff;
+    top: -10px;
+}
+
+
+
+
+/* 弹出的层的基类 */
+
+.cover {
+    /* 设置弹出来的层的背景色为白色 */
+    background-color: #fff;
+}

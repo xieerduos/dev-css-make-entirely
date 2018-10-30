@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三栏等高布局 </title>
+    <style>
+        section {
+            display: flex;
+            background-color: skyblue;
+        }
+
+        .left-side,
+        .right-side {
+            width: 200px;
+            height: 400px;
+            background-color: lightcoral;
+        }
+
+        .content {
+            height: 400px;
+            background-color: silver;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="left-side"></div>
+        <div class="content"></div>
+        <div class="right-side"></div>
+    </section>
+</body>
+
+</html>

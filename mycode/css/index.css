@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+body{
+    color: #666666;
+    font-size: 12px;
+}
+a {
+     color: #666;
+}
+/*  ==>S布局css代码 */
+    .h-header{
+
+    }
+    .h-header .top-nav {
+        margin: 0 auto;
+        width: 1190px;
+        height: 98px;
+        line-height: 72px;
+        padding-top: 26px;
+        /* border: 1px solid red; */
+    }
+
+    /* S logo区 */
+    .h-header .top-nav .logo {
+        float: left;
+    }
+    .h-header .logo h1{
+        position: absolute;
+        left: -9999px;
+    }
+    /* E logo区 */
+    
+   
+
+    /* S 搜索框区 */
+    .h-header .top-nav .search {
+        margin: 0 265px 0 357px;
+        padding-top: 10px;
+        line-height: 30px;
+        position: relative;
+    }
+
+    .h-header .search .course-sel{
+        position: relative;
+        display: inline-block;
+        width: 66px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+    }
+    .h-header .search input {
+        display: inline-block;
+        width: 400px;
+        height: 30px; 
+        line-height: 30px;
+        padding-left: 1px;
+        border: 1px solid #e0e0e0;
+        /* box-sizing: border-box */
+        border-left: none;
+
+    }
+    .search .course-sel,.search input{
+        float: left;
+    }
+
+    .h-header .search .icon-sel {
+        float: right;
+        margin: 14px 12px;
+    }
+
+    .h-header .search .course-menu {
+        position: absolute;
+        top: 30px;
+        left: -1px;
+        display: none;
+    }
+
+    .h-header .course-menu li {
+        border: 1px solid #e0e0e0;
+        width: 66px;
+    }
+    .h-header .course-menu li:hover {
+        background-color: #ccc;
+    }
+
+    .h-header .course-menu a{
+        color: #333;
+    }
+    .h-header .course-sel:hover .course-menu {
+        display: block;
+    }
+    
+    .h-header .search .icon-search {
+        position: absolute;
+        left: 440px;
+        top: 15px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: url(../img/search.gif) no-repeat;
+    }
+
+
+    /* E 搜索框区 */
+    
+    /* S 用户导航区 */
+    .h-header .top-nav .user-nav {
+        float: right; 
+        padding-top: 5px;
+    }
+
+    .h-header .user-nav .user-nav-item {
+        float: left;
+        height: 42px;
+        line-height: 42px;
+        margin: 0 11px 0 14px;
+    }
+
+    .h-header .user-nav .avater {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+    }
+
+
+    .h-header .user-nav .msg-wrap {
+        position: relative;
+        top: 9px;
+        width: 34px;
+        height: 40px;
+        background: url(../img/sprite-msg.png) no-repeat left top;
+    }
+
+    .h-header .user-nav .username{
+        position: relative;
+        display: inline-block;
+    }
+
+    .h-header .user:hover .user-menu-cover {
+        display: block;
+    }
+
+    /* 设置弹出来的用户用菜单 */
+    .h-header .user-nav .user-menu-cover {
+        position: absolute;
+        top: 42px;
+        left: -33px;
+        display: none;
+    }
+    .h-header .user-menu-cover li {
+        width: 124px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #f1f1f1;
+        text-align: center;
+    }
+    .h-header .user-menu-cover li:hover {
+        background-color: #cecece;
+    }
+    .h-header .teacher{
+        position: relative;
+        z-index: 999;
+    }
+    .h-header .teacher:hover .user-menu-cover{
+        display: block;
+    }
+    /* 设置头像 */
+    .h-header .user-nav .msg {
+        position: relative;
+        top: -19px;
+        right: -15px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        /* padding-left: 4px; */
+        /* background: url(../img/sprite-msg.png) no-repeat left bottom; */
+        border-radius: 50%;
+        background: red;
+        text-align: center;
+        font: 12px/1.5 '微软雅黑';
+    }
+    .h-header .user-nav .msg-num {
+        color: #fff;
+    }
+
+    .h-header .user-nav .icon {
+        display: inline-block;
+        float: right;
+        margin: 17px 0px 0px 7px;
+    }
+    /* E 用户导航区 */
+
+    /*  ==>E布局css代码 */
+    
+    /* ==>E顶部导航栏  */
+    
+    /* S主导航区域*/
+
+    /* 通栏盒子 */
+    .site-nav {
+        background: #3598db;
+        font-size: 14px/1.5 "微软雅黑";
+    }
+
+    /* 设置背景右侧的红色背景 */
+    .site-nav .bg-red-wrap {
+        position: relative;
+        margin-left: 1190px;
+    }
+    .site-nav .bg-red-wrap .bg-red{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 50%;
+        height: 60px;
+        background-color:red;
+    }
+    /* 版心盒子 */
+    .site-nav .site-nav-wrap {
+        margin: 0 auto;
+        width: 1190px;
+        height: 60px;
+    }
+    
+    .site-nav li, .site-nav a{
+        color: #fff;
+    }
+    /* 左侧主导航 */
+    .site-nav .main-nav {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .site-nav .main-nav .menu-item {
+        float: left;
+        margin-right: 10px;
+    }
+    .site-nav .menu-item a {
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 22px;
+        border-radius: 3px;
+    }
+
+    .site-nav .menu-item a.active{
+        background-color: #2db0f9;
+    }
+    .site-nav .menu-item a:hover {
+        background-color: #2db0f9;
+    }
+    /* S右侧主导航 */
+    .site-nav .aside-nav {
+        float: right;
+        padding-left: 20px;
+        background-color: red;
+    }
+
+    .site-nav .aside-nav li{
+        float: left;
+        line-height: 60px;
+        margin-left: 20px;
+    }
+    /* E右侧主导航 */
+    
+    /* E主导航区域*/
+
+
+    /* S banner区 */
+    .h-banner {
+        background-color: #61caff;
+    }
+    .h-banner .banner-wrap {
+        position: relative;
+        width: 1190px;
+        height: 410px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .h-banner .banner-wrap .banner-img{
+        position: relative;
+        width: 1190px;
+        height: 410px;
+        overflow: hidden;
+    }
+    .h-banner .banner-wrap .banner-item{
+        position: absolute;
+        width: 1190px;
+        height: 410px;
+    }
+    .h-banner .banner-icon {
+        position: absolute;
+        bottom: 10px;
+        left: -100px;
+        margin-left: 50%;
+        height: 22px;;
+        /* background-color: purple; */
+    }
+    .h-banner .banner-icon .banner-icon-item{
+        float: left;
+        width: 22px;
+        height: 22px;
+        margin-right: 15px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    .h-banner .banner-icon .banner-icon-item:hover{
+        cursor: pointer;
+        background-color: #3598db;
+    }
+    .h-banner .banner-icon .active {
+        background-color: #3598db;
+        
+    }
+    /* E banner区 */
+
+    /* S产品列表区域 */
+    .h-main {
+        margin-bottom: 50px;
+    }
+    .h-main .course-list, .h-main .book-list {
+        width: 1190px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    .h-main .p-module-head {
+        font-size: 22px;
+        height: 22px;
+        color: #1a1a1a;
+    }
+    .h-main .p-module-head .p-module-title {
+        float: left;
+        height: 22px;
+        padding-left: 16px;
+        line-height: 22px;
+        border-left: 7px solid #2db0f9;
+    }
+    .h-main .p-module-head .p-module-more {
+        float: right;
+        color: #3598db;
+    }
+
+    /* S课程列表项 */
+    .h-main .p-module-body{
+        overflow: hidden;
+    }
+    .h-main .p-list{
+
+    }
+    .h-main .p-list .p-list-item{
+        float: left;
+        margin:0 14px;
+        padding-top: 30px;
+        font-size: 15px;
+        line-height: 28px;
+        color: #1a1a1a;
+    }
+    .h-main .p-list img {
+        width: 206px;
+        height: 180px;
+        border: 1px solid #ccc;
+    }
+
+    /* E课程列表项 */
+    /* E产品列表区域 */
+
+
+
+/* ==>E顶部导航栏  */
+
+/* S footer */
+    .h-footer {
+        height: 90px;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background-color: #373a43;
+    }
+/* E footer */

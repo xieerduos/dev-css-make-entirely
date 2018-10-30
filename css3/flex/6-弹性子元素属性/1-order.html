@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>order </title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1500px;
+            height: 400px;
+            background-color: skyblue;
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            margin: 10px;
+        }
+        .c{
+            order: -1;
+        }
+        .a{
+            order: -1;
+        }
+        .b{
+            order: 10;
+        }
+    </style>
+</head>
+<body>
+    div.container>div.flex-item*10{$}
+    <div class="container">
+        <div class="flex-item">1</div>
+        <div class="flex-item a">2</div>
+        <div class="flex-item b">3</div>
+        <div class="flex-item c">4</div>
+        <div class="flex-item ">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+        <div class="flex-item">15</div>
+    </div>
+</body>
+</html>

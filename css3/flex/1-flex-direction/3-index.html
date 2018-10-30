@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-direction </title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 500px;
+            height: 250px;
+            background-color: skyblue;
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        flex-direction 顺序指定了 弹性子元素 在父容器中的位置
+        flex-direction:row /row-reverse/column/column-reverse
+            row:默认  左对齐
+            row-reverse :右对齐，最后一项排在最前面
+            column：纵向排列
+            column-reverse：反转纵向排列，最后一项排在最上面
+      -->
+      <div class="flex-container">
+          <div class="flex-item">1</div>
+          <div class="flex-item">2</div>
+          <div class="flex-item">3</div>
+      </div>
+</body>
+</html>
